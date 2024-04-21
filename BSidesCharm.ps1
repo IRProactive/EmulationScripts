@@ -89,7 +89,7 @@ Invoke-AtomicTest T1197 -TestNumbers 1
 #Sysmon Event IDs 12, 13, 14: Registry 
 # T1112 Modify Registry - BlackByte Ransomware
 Invoke-AtomicTest T1112 -TestNumbers 7 -GetPrereqs
-Invoke-AtomicTest T1112 -TestNumbers
+Invoke-AtomicTest T1112 -TestNumbers 7
 
 # Sysmon Event ID 15: FileCreateStreamHash
 # T1105 Ingress Tool Transfer
@@ -102,7 +102,7 @@ Invoke-AtomicTest T1105 -TestNumbers 29
 # Sysmon Event ID 17, 18: Pipe Events
 # T1134.001 Access Token Manipulation
 Invoke-AtomicTest T1134.001 -TestNumbers 1 -GetPrereqs
-Invoke-AtomicTest T1134.001 -TestNumbers
+Invoke-AtomicTest T1134.001 -TestNumbers 1
 
 # Sysmon Event ID 19, 20, 21: WMI Event Consumer
 # T1546.003 Event Triggered Subscription
