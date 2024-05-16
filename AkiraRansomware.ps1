@@ -34,7 +34,8 @@ else {
   IEX (New-Object Net.WebClient).DownloadString('https://raw.githubusercontent.com/redcanaryco/invoke-atomicredteam/master/install-atomicredteam.ps1'); Install-AtomicRedTeam -getAtomics -Force
   Import-Module "C:\AtomicRedTeam\invoke-atomicredteam\Invoke-AtomicRedTeam.psd1" -Force
 }
-# Valid Accountsv - Akira threat actors obtain and abuse credentials of existing accounts as a means of gaining initial access.
+
+# Valid Accounts - Akira threat actors obtain and abuse credentials of existing accounts as a means of gaining initial access.
 Invoke-AtomicTest T1078.001 -TestNumbers 1 -GetPrereqs
 Invoke-AtomicTest T1078.001 -TestNumbers 1 
 
@@ -101,5 +102,8 @@ Invoke-AtomicTest T1486 -TestNumbers 5
 # Inhibit System Recovery - Akira threat actors delete volume shadow copies on Windows systems.
 Invoke-AtomicTest T1490 -TestNumbers 2 -GetPrereqs
 Invoke-AtomicTest T1490 -TestNumbers 2 
+
+
+
 
 
