@@ -35,7 +35,7 @@ else {
 
 # System Discovery
 Invoke-AtomicTest T1033 -TestNumbers 1 -GetPrereqs
-Invoke-AtomicTest T1003 -TestNumbers 1
+Invoke-AtomicTest T1033 -TestNumbers 1
 
 # Security Software Discovery AV Discovery via WMI
 Invoke-AtomicTest T1518.001 -TestNumbers 7 -GetPrereqs
