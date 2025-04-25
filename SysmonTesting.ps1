@@ -53,8 +53,8 @@ Invoke-AtomicTest T1105 -TestNumbers 7
 # Sysmon Event ID 5: Process Terminated
 # T1489 Service Stop
 
-Invoke-AtomicTest -TestNumbers 1 -GetPrereqs
-Invoke-AtomicTest -TestNumbers 1 
+Invoke-AtomicTest T1489 -TestNumbers 1 -GetPrereqs
+Invoke-AtomicTest T1489 -TestNumbers 1 
 
 # Sysmon Event ID 6: Driver Loaded
 # T1547 Boot or Logon Autostart Execution
